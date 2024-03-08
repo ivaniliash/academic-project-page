@@ -68,8 +68,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Generative AI in general, and synthetic visual data generation in specific, hold much promise for benefiting surgical training. Current training methods, however, primarily rely on reading materials and observing live surgeries, which can be time-consuming and impractical. In this work, we developed an approach, that works towards improving the training process. We use diffusion models in combination with a zero-shot video diffusion method that allows us to interactively generate realistic laparoscopic images and videos by specifying a surgical action through text and guiding the generation with tool positions through segmentation masks.
-We conduct our experiments on the publicly available Cholec dataset family and evaluate fidelity and factual correctness using a surgical action recognition model as well as the pixel-wise F1-score for the spatial control of tool generation. As a result, our video generation approach achieves an FID of 38.097 and an F1-score of 0.71.
+            Generative AI, in general, and synthetic visual data gen-
+eration, in specific, hold much promise for benefiting surgical training
+by providing photorealism to simulation environments. Current training
+methods primarily rely on reading materials and observing live surgeries,
+which can be time-consuming and impractical. In this work, we take
+a significant step towards improving the training process. Specifically,
+we use diffusion models in combination with a zero-shot video diffusion
+method to interactively generate realistic laparoscopic images and videos
+by specifying a surgical action through text and guiding the generation
+with tool positions through segmentation masks. We demonstrate the
+performance of our approach using the publicly available Cholec dataset
+family and evaluate the fidelity and factual correctness of our generated
+images using a surgical action recognition model as well as the pixel-wise
+F1-score for the spatial control of tool generation. We achieve an FID of
+38.097 and an F1-score of 0.71.
           </p>
         </div>
       </div>
@@ -234,6 +247,36 @@ We conduct our experiments on the publicly available Cholec dataset family and e
     <div class="container">
       <h2 class="title is-3">Controlled Video Generation (ControlVideo)</h2>
       <div id="results-carousel3" class="carousel results-carouse3">
+        <div class="item item-video7 has-text-centered">
+          <h2 class="subtitle has-text-centered">
+            irrigator irrigate abdominal_wall_cavity in gallbladder-dissection
+          </h2>
+          <video poster="" id="video7" controls muted loop height="512px" width="512px" style="margin-bottom: 2em;">
+            <!-- Your video file here -->
+            <source src="static/videos/controlvideo/7.webm"
+            type="video/webm">
+          </video>
+        </div>
+        <div class="item item-video8 has-text-centered">
+          <h2 class="subtitle has-text-centered">
+            grasper retract liver and irrigator aspirate fluid in cleaning-and-coagulation
+          </h2>
+          <video poster="" id="video8" controls muted loop height="512px" width="512px" style="margin-bottom: 2em;">
+            <!-- Your video file here -->
+            <source src="static/videos/controlvideo/8.webm"
+            type="video/webm">
+          </video>
+        </div>
+        <div class="item item-video9 has-text-centered">
+          <h2 class="subtitle has-text-centered">
+            hook dissect gallbladder in gallbladder-dissection
+          </h2>
+          <video poster="" id="video9" controls muted loop height="512px" width="512px" style="margin-bottom: 2em;">
+            <!-- Your video file here -->
+            <source src="static/videos/controlvideo/9.webm"
+            type="video/webm">
+          </video>
+        </div>
         <div class="item item-video1 has-text-centered">
           <h2 class="subtitle has-text-centered">
             bipolar dissect gallbladder in carlot-triangle-dissection
@@ -241,16 +284,6 @@ We conduct our experiments on the publicly available Cholec dataset family and e
           <video poster="" id="video1" controls muted loop height="512px" width="512px" style="margin-bottom: 2em;">
             <!-- Your video file here -->
             <source src="static/videos/controlvideo/0.webm"
-            type="video/webm">
-          </video>
-        </div>
-        <div class="item item-video2 has-text-centered">
-          <h2 class="subtitle has-text-centered">
-            grasper and bipolar in clipping-and-cutting
-          </h2>
-          <video poster="" id="video2" controls muted loop height="512px" width="512px" style="margin-bottom: 1em;">
-            <!-- Your video file here -->
-            <source src="static/videos/controlvideo/1.webm"
             type="video/webm">
           </video>
         </div>
